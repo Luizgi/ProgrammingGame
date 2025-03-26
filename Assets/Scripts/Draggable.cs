@@ -22,9 +22,6 @@ public class Draggable : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-       // _audioSource.clip = _drag;
-       // _audioSource.Play();
-
         _canvasGroup.alpha = .5f;
         _canvasGroup.blocksRaycasts = false;
     }
@@ -36,9 +33,6 @@ public class Draggable : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
 
     public void OnEndDrag(PointerEventData eventData)
     {
-      //  _audioSource.clip = _drop;
-      //  _audioSource.Play();
-
         _canvasGroup.alpha = 1f;
         _canvasGroup.blocksRaycasts = true;
     }

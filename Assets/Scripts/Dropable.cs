@@ -9,5 +9,6 @@ public class Dropable : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = _transform.anchoredPosition;
+        Debug.Log("Dropped");
     }
 }
